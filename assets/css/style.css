@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blue-text{
+    color: #1CC3BE;
+}
+
+.navbar {
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+.navbar .logo {
+    flex-basis: auto;
+    width: 20%;
+    gap: 5px;
+    display: flex;
+}
+
+.navbar .logo p {
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.navbar nav {
+    width: 70%;
+}
+
+.navbar .menu {
+    float: right;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .menu a {
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.navbar .menu a:hover {
+    color: #1CC3BE;
+}
+
+.row{
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: baseline;
+}
+
+.col {
+    width: 50%;
+}
+
+.apresentacao-imagem {
+    max-width: 47vw;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.apresentacao .subtitulo {
+    font-size: 28px;
+}
+
+.apresentacao .titulo {
+    line-height: 60px;
+    font-size: 50px;
+}
+
+.apresentacao .texto {
+    margin: 25px auto;
+}
+
+hr {
+    max-width: 60%;
+    height: 6px;
+    color: #1CC3BE;
+    background-color: #1CC3BE;
+    border: none;
+    border-radius: 5ch;
+}
+
+/* temp */
+
+button {
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #1CC3BE;
+    border: none;
+    text-align: center;
+    position: relative;
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    background-color: rgba(52, 52, 50, 0.749);
+    height: 100vh;
+    width: 100vw;
+    top: 0
+}
+
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.botao-fechar {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #1CC3BE;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.modal.aberto {
+    visibility: visible;
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+}
