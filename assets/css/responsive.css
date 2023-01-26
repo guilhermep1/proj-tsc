@@ -1,0 +1,43 @@
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .apresentacao article {
+        padding: 0;
+        
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .modal iframe {
+        width: calc(702px - 150px);
+        height: calc(395px - 85px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    /* TODO: ESCONDER ITENS DO MENU */
+
+    .apresentacao .subtitulo {
+        font-size: 20px;
+    }
+
+    .apresentacao .titulo {
+        font-size: 58px;
+        line-height: 60px;
+    }
+}

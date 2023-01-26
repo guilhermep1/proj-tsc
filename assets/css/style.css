@@ -6,6 +6,8 @@ body {
     color: #1CC3BE;
 }
 
+/* navbar */
+
 header {
     margin: 20px;
 }
@@ -50,7 +52,10 @@ header {
     color: #1CC3BE;
 }
 
+/* rows & columns */
+
 .row{
+    height: 100%;
     align-items: top;
     display: flex;
     flex-flow: wrap;
@@ -58,19 +63,10 @@ header {
 }
 
 .col {
+    height: 100%;
     margin: 0;
     width: 50%;
     max-height: 900px;
-}
-
-.apresentacao-imagem {
-    display: block;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    background: #1CC3BE;
-    background-size: contain;
 }
 
 .container {
@@ -80,6 +76,17 @@ header {
     align-items: center;
     padding: 0 5%;
 }
+
+/* Primeira seção */
+
+.apresentacao-imagem {
+    display: block;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+}
+
 
 .apresentacao .subtitulo {
     font-size: 28px;
@@ -110,7 +117,6 @@ hr {
     border-radius: 5ch;
 }
 
-/* temp */
 
 button {
     transition: 0.5s;
@@ -130,6 +136,7 @@ button:hover {
 }
 
 .modal {
+    z-index: 999;
     visibility: hidden;
     position: fixed;
     background-color: rgba(52, 52, 50, 0.749);
@@ -160,7 +167,26 @@ button:hover {
     visibility: visible;
 }
 
-@media screen and (max-width: 900px) {
+.bg-circle {
+    visibility: hidden;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 32%;
+    left: 47%;
+    box-shadow: 0 -2px teal;
+}
+
+#image-col {
+    z-index: 1;
+    border-radius: 20% 20% 0 0;
+    background: #1CC3BE;
+}
+
+/* @media screen and (max-width: 900px) {
     .row {
         flex-direction: column;
     }
@@ -172,3 +198,20 @@ button:hover {
         
     }
 }
+
+@media screen and (max-width: 730px) {
+    .modal iframe {
+        width: calc(702px - 150px);
+        height: calc(395px - 85px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+} */
