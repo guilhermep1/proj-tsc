@@ -32,6 +32,12 @@
 
     /* TODO: ESCONDER ITENS DO MENU */
 
+    /* temp ----- */
+    .menu{
+        visibility: hidden;
+    }
+    /* -------------- */
+
     .apresentacao .subtitulo {
         font-size: 20px;
     }
