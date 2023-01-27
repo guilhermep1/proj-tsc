@@ -9,6 +9,13 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+    .modal iframe {
+        width: 702px;
+        height: 395px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .row {
         flex-direction: column;
@@ -42,7 +49,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 558px) {
 
     /* TODO: ESCONDER ITENS DO MENU */
 
@@ -59,5 +66,18 @@
     .apresentacao .titulo {
         font-size: 58px;
         line-height: 60px;
+    }
+
+    .modal iframe {
+        width: 416px;
+        height: 234px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .modal iframe {
+        width: 384px;
+        height: 216px;
     }
 }

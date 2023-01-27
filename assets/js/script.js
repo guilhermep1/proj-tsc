@@ -6,7 +6,7 @@ const video = document.getElementById("popup-video");
 
 function alternarModal() {
     modal.classList.toggle("aberto");
-    video.setAttribute("src", "https://www.youtube.com/embed/4tXjqIXB_eU");
+    video.setAttribute("src", "https://www.youtube.com/embed/K4TOrB7at0Y");
 }
 
 botaoAbrirModal.addEventListener("click", alternarModal);
