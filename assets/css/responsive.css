@@ -1,3 +1,14 @@
+@media screen and (max-width: 1140px) {
+    .apresentacao .subtitulo {
+        font-size: 20px;
+    }
+
+    .apresentacao .titulo {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .row {
         flex-direction: column;
@@ -7,7 +18,10 @@
     }
     .apresentacao article {
         padding: 0;
-        
+    }
+    .apresentacao-imagem {
+        margin: 0 auto;
+        max-width: 590px;
     }
 }
 
@@ -28,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
 
     /* TODO: ESCONDER ITENS DO MENU */
 

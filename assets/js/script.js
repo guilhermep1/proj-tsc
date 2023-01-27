@@ -4,15 +4,15 @@ const botaoFecharModal = document.querySelector(".botao-fechar");
 const modalContainer = document.querySelector(".modal-container");
 const video = document.getElementById("popup-video");
 
-function fecharModal() {
-    modal.classList.remove("aberto");
-    video.setAttribute("src", " ");
+function alternarModal() {
+    modal.classList.toggle("aberto");
+    video.setAttribute("src", "https://www.youtube.com/embed/4tXjqIXB_eU");
 }
 
-botaoAbrirModal.addEventListener("click", () => {
-    modal.classList.add("aberto");
-    video.setAttribute("src", "https://www.youtube.com/embed/4tXjqIXB_eU")
-});
+botaoAbrirModal.addEventListener("click", alternarModal);
+botaoFecharModal.addEventListener("click", alternarModal);
 
-botaoFecharModal.addEventListener("click", fecharModal);
-modalContainer.addEventListener("click", fecharModal);
+modalContainer.addEventListener("click", () => {
+    modal.classList.remove("aberto");
+    video.setAttribute("src", " ");
+});
