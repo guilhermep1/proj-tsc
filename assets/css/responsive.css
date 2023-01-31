@@ -52,10 +52,13 @@
 @media screen and (max-width: 558px) {
 
     /* TODO: ESCONDER ITENS DO MENU */
+    #btn-mobile {
+        display: block;
+    }
 
     /* temp ----- */
-    .menu{
-        visibility: hidden;
+    .menu *{
+        display: none;
     }
     /* -------------- */
 
