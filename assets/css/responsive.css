@@ -20,15 +20,22 @@
     .row {
         flex-direction: column;
     }
+
     .col {
         width: 100%;
     }
+
     .apresentacao article {
         padding: 0;
     }
+
     .apresentacao-imagem {
         margin: 0 auto;
         max-width: 590px;
+    }
+
+    .bg-circle {
+        display: none;
     }
 }
 
@@ -57,9 +64,10 @@
     }
 
     /* temp ----- */
-    .menu *{
+    #nav {
         display: none;
     }
+
     /* -------------- */
 
     .apresentacao .subtitulo {
@@ -83,4 +91,26 @@
         width: 384px;
         height: 216px;
     }
+}
+
+#nav.active {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    background-color: #1CC3BE;
+}
+
+#nav.active .menu {
+    margin: 0;
+    align-items: flex-start;
+    float: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+#nav.active .menu li {
+    padding: 10px;
+    cursor: pointer;
 }
