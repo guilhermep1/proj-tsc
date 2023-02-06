@@ -63,9 +63,30 @@
         display: block;
     }
 
-    /* temp ----- */
+    /* -- Mobile Menu -- */
     #nav {
-        display: none;
+        visibility: hidden;
+        height: 0px;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        width: 100%;
+        background-color: #1CC3BE;
+        transition: .4s;
+        overflow-y: hidden;
+    }
+
+    #nav .menu {
+        margin: 0;
+        align-items: flex-start;
+        float: none;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    #nav .menu li {
+        padding: 10px;
+        cursor: pointer;
     }
 
     /* -------------- */
@@ -94,23 +115,7 @@
 }
 
 #nav.active {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 0px;
-    width: 100%;
-    background-color: #1CC3BE;
+    visibility: visible;
+    height: 132px;
 }
 
-#nav.active .menu {
-    margin: 0;
-    align-items: flex-start;
-    float: none;
-    flex-direction: column;
-    gap: 0;
-}
-
-#nav.active .menu li {
-    padding: 10px;
-    cursor: pointer;
-}
