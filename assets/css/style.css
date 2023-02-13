@@ -14,6 +14,11 @@ b {
 
 /* navbar */
 
+header {
+    background: #1cc1bc;
+    margin-bottom: 20px;
+}
+
 .navbar {
     padding: 20px 5%;
     margin: 0 auto;
@@ -24,14 +29,21 @@ b {
 }
 
 .navbar .logo {
+    color:white;
+    font-weight: 300;
     width: 20%;
     gap: 5px;
     display: flex;
 }
 
 .navbar .logo p {
+    font-size: 13px;
     text-transform: uppercase;
     align-self: center;
+}
+
+.navbar .logo img {
+    width: 80px;
 }
 
 .navbar nav {
@@ -48,13 +60,15 @@ b {
 }
 
 .navbar .menu a {
-    color: black;
+    color: white;
     font-weight: bold;
     transition: 0.2s;
+    padding: 5px;
+    border-radius: 50px;
 }
 
 .navbar .menu a:hover {
-    color: #1CC3BE;
+    background-color: #407e7c;
 }
 
 .gg-menu {
@@ -71,6 +85,7 @@ b {
     display: flex;
     flex-flow: wrap;
     justify-content: baseline;
+    align-items: center;
 }
 
 .col {
@@ -100,13 +115,13 @@ b {
 }
 
 
-.apresentacao .subtitulo {
+/* .apresentacao .subtitulo {
     font-size: 28px;
-}
+} */
 
 .apresentacao .titulo {
     line-height: 60px;
-    font-size: 68px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 85px;
 }
@@ -131,9 +146,10 @@ hr {
 
 button {
     text-align: center;
-    background-color: #1CC3BE;
-    border: none;
-    border-radius: 10px;
+    background: none;
+    border: solid 5px #1CC2BD;
+    color: #1CC2BD;
+    border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -144,7 +160,7 @@ button {
     padding: 8px 25px;
 }
 
-.botao-video:hover {
+.botao-video:hover, .animation-button:hover {
     transform: scale(1.08);
 }
 
@@ -169,11 +185,10 @@ button {
 }
 
 .botao-fechar {
+    transition: 0.2s;
     font-weight: bold;
     cursor: pointer;
-    background-color: #1CC3BE;
     padding: 5px 15px;
-    border-radius: 3px;
 }
 
 .modal.aberto {
@@ -254,6 +269,7 @@ button {
     display: none;
     float: right;
     cursor: pointer;
+    background-color: #005669;
 }
 
 .fa-users {
