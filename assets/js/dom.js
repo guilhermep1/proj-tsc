@@ -5,7 +5,7 @@ class TscHeader extends HTMLElement {
         <div class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets\\img\\tsc_logo_branco.png">
+                    <img src="assets/img/tsc_logo_branco.png">
                 </a>
                 <p>The<br>Supplement<br>Company</p>
             </div>
