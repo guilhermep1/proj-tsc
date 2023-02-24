@@ -17,8 +17,12 @@
 }
 
 @media screen and (max-width: 900px) {
-    .row {
+    .row, .info-cards {
         flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .col {

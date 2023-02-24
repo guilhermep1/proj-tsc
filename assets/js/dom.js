@@ -9,7 +9,7 @@ class TscHeader extends HTMLElement {
                 </a>
                 <p>The<br>Supplement<br>Company</p>
             </div>
-            <button id="btn-mobile"><i class="gg-menu"></i></button>
+            <button id="btn-mobile"><i class="fa-solid fa-bars"></i></button>
             <nav id="nav">
                 <ul class="menu">
                     <li><a href="sobre-nos.html">Sobre nós</a></li>
