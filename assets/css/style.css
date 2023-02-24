@@ -124,7 +124,6 @@ header {
     line-height: 60px;
     font-size: 60px;
     font-weight: 700;
-    line-height: 85px;
 }
 
 .texto {
@@ -333,4 +332,8 @@ button {
     border-radius: 50%;
     background-color: #1CC3BE;
     margin: 0 auto;
+}
+
+.marcas .titulo {
+    text-align: center;
 }

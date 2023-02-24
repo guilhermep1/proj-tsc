@@ -133,6 +133,26 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    .modal iframe {
+        width: 384px;
+        height: 216px;
+    }
+
+    .ideias-do-futuro {
+        margin-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .ideias-do-futuro {
+        margin-top: 400px;
+    }
+
+}
+
+
 #nav.active {
     visibility: visible;
     height: 132px;
