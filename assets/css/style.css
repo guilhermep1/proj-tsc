@@ -115,7 +115,6 @@ header {
     height: 100%;
 }
 
-
 .subtitulo {
     font-size: 28px;
 }
@@ -336,4 +335,23 @@ button {
 
 .marcas .titulo {
     text-align: center;
+}
+
+.marcas-imagem {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner-marcas {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    background-color: #e1e2e0;
+}
+
+.sobre-nos img {
+    padding: 20px;
+    border-radius: 50px;
 }
