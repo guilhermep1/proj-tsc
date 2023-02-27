@@ -14,7 +14,7 @@ b {
 
 section {
     display: block;
-    margin-top: 20px;
+    margin-top: 5rem;
 }
 
 /* navbar */
@@ -345,10 +345,11 @@ button {
 
 .banner-marcas {
     height: 400px;
-    width: 100%;
+    width: 100vw;
     position: relative;
-    left: 0;
+    left: calc(-50vw + 49.4%);
     background-color: #e1e2e0;
+
 }
 
 .sobre-nos img {
