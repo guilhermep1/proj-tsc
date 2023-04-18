@@ -3,6 +3,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.grid {
+  display: grid;
+}
+
 .blue-text {
   font-weight: bold;
   color: #1cc3be;
@@ -22,8 +26,11 @@ main {
 }
 
 header {
-  background: #1cc1bc;
-  margin-bottom: 20px;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 900;
 }
 
 .navbar {
@@ -34,7 +41,7 @@ header {
   align-items: center;
 }
 .navbar .logo {
-  color: white;
+  color: black;
   font-weight: 300;
   width: 20%;
   gap: 5px;
@@ -60,7 +67,7 @@ header {
   gap: 30px;
 }
 .navbar .menu a {
-  color: white;
+  color: black;
   font-weight: bold;
   transition: 0.2s;
   padding: 5px;
@@ -176,6 +183,10 @@ button {
   height: 100vh;
   border-radius: 15px;
   gap: 15px;
+}
+
+section:first-of-type {
+  margin-top: 80px;
 }
 
 .botao-fechar {
@@ -328,6 +339,15 @@ button {
 #sobrenos-intro article {
   margin-left: 10px;
   padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#sobrenos-intro article button {
+  width: 200px;
+}
+#sobrenos-intro article h2 {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style-new.css.map */

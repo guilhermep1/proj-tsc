@@ -7,7 +7,7 @@ class TscHeader extends HTMLElement {
                 <a href="index.html">
                     <img src="assets/img/tsc_logo_branco.png">
                 </a>
-                <p>The<br>Supplement<br>Company</p>
+                <!-- <p>The<br>Supplement<br>Company</p> -->
             </div>
             <button id="btn-mobile"><i class="fa-solid fa-bars"></i></button>
             <nav id="nav">

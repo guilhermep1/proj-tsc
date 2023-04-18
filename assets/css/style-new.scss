@@ -16,6 +16,9 @@ body {
   width: 100%;
   font-family: $font-family_1;
 }
+.grid {
+  display: grid;
+}
 .blue-text {
   font-weight: bold;
   color: $color_1;
@@ -33,8 +36,11 @@ main {
   overflow: hidden;
 }
 header {
-  background: #1cc1bc;
-  margin-bottom: 20px;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 900;
 }
 
 .navbar {
@@ -44,7 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
   .logo {
-    color: $color_2;
+    color: black;
     font-weight: 300;
     width: 20%;
     gap: 5px;
@@ -69,7 +75,7 @@ header {
     display: flex;
     gap: 30px;
     a {
-      color: $color_2;
+      color: black;
       font-weight: bold;
       transition: 0.2s;
       padding: 5px;
@@ -183,6 +189,11 @@ button {
   border-radius: 15px;
   gap: 15px;
 }
+
+section:first-of-type {
+  margin-top: 80px;
+}
+
 .botao-fechar {
   transition: 0.2s;
   font-weight: bold;
@@ -322,5 +333,17 @@ button {
   article {
     margin-left: 10px;
     padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    button {
+      width: 200px;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
   }
 }
