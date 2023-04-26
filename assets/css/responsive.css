@@ -1,156 +1,182 @@
 @media screen and (max-width: 1140px) {
-    .apresentacao .titulo {
+  /* .apresentacao .titulo {
         font-size: 60px;
         line-height: 60px;
-    }
+    } */
 }
 
 @media screen and (max-width: 960px) {
-    .modal iframe {
-        width: 702px;
-        height: 395px;
-    }
+  .modal iframe {
+    width: 702px;
+    height: 395px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .row, .info-cards {
-        flex-direction: column;
-    }
+  .row,
+  .info-cards {
+    flex-direction: column;
+  }
 
-    .card {
-        width: 100%;
-    }
+  .card {
+    width: 100%;
+  }
 
-    .col {
-        width: 100%;
-    }
+  .col {
+    width: 100%;
+  }
 
-    .apresentacao article {
-        padding: 0;
-    }
+  .apresentacao article {
+    padding: 0;
+  }
 
-    .apresentacao-imagem {
-        margin: 0 auto;
-        max-width: 590px;
-    }
+  .apresentacao-imagem {
+    margin: 0 auto;
+    max-width: 590px;
+  }
 
-    /* .bg-circle {
+  #texto-apresentacao {
+    padding: 2em 0;
+  }
+
+  .botao-video {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* .bg-circle {
         display: none;
     } */
 }
 
 @media screen and (max-width: 730px) {
-    .modal iframe {
-        width: calc(702px - 150px);
-        height: calc(395px - 85px);
-    }
+  .subtitulo {
+    text-align: center;
+  }
+  .titulo {
+    text-align: center;
+    padding: 0;
+  }
+  .modal iframe {
+    width: calc(702px - 150px);
+    height: calc(395px - 85px);
+  }
+  #sobrenos-grid-info .grid {
+    grid-template-columns: 1fr;
+  }
+  #sobrenos-grid-info .grid .item:not(:first-child) .item-container {
+    border-left: none;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+  #sobrenos-intro article {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .logo img {
-        width: 80px;
-    }
+  .logo img {
+    width: 80px;
+  }
 
-    .logo p {
-        font-size: 12px;
-    }
+  .logo p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 558px) {
+  /* TODO: ESCONDER ITENS DO MENU */
+  #btn-mobile {
+    display: block;
+  }
 
-    /* TODO: ESCONDER ITENS DO MENU */
-    #btn-mobile {
-        display: block;
-    }
+  /* -- Mobile Menu -- */
+  #nav {
+    visibility: hidden;
+    height: 0px;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    background-color: #1cc3be;
+    transition: 0.4s;
+    overflow-y: hidden;
+  }
 
-    /* -- Mobile Menu -- */
-    #nav {
-        visibility: hidden;
-        height: 0px;
-        position: absolute;
-        top: 90px;
-        left: 0px;
-        width: 100%;
-        background-color: #1CC3BE;
-        transition: .4s;
-        overflow-y: hidden;
-    }
+  #nav .menu {
+    margin: 0;
+    align-items: flex-start;
+    float: none;
+    flex-direction: column;
+    gap: 0;
+  }
 
-    #nav .menu {
-        margin: 0;
-        align-items: flex-start;
-        float: none;
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    #nav .menu li {
-        width: 100%;
-        padding: 10px;
-        cursor: pointer;
-    }
+  #nav .menu li {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
 
-    #nav .menu li a{
-        padding: 0;
-        width: 100%;
-        display: block;
-    }
+  #nav .menu li a {
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
 
-    #nav .menu li:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+  #nav .menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 
-    .navbar .menu a:hover {
-        color: #ffffff;
-    }
+  .navbar .menu a:hover {
+    color: #ffffff;
+  }
 
-    /* -------------- */
+  /* -------------- */
 
-    .apresentacao .subtitulo {
-        font-size: 20px;
-    }
+  .apresentacao .subtitulo {
+    font-size: 20px;
+  }
 
-    .apresentacao .titulo {
+  /* .apresentacao .titulo {
         font-size: 58px;
         line-height: 60px;
-    }
+    } */
 
-    .modal iframe {
-        width: 416px;
-        height: 234px;
-    }
-
+  .modal iframe {
+    width: 416px;
+    height: 234px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .modal iframe {
-        width: 384px;
-        height: 216px;
-    }
+  .modal iframe {
+    width: 384px;
+    height: 216px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .modal iframe {
-        width: 384px;
-        height: 216px;
-    }
+  .modal iframe {
+    width: 384px;
+    height: 216px;
+  }
 
-    .ideias-do-futuro {
-        margin-top: 200px;
-    }
+  .ideias-do-futuro {
+    margin-top: 200px;
+  }
 
+  .titulo {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .ideias-do-futuro {
-        margin-top: 400px;
-    }
-
+  .ideias-do-futuro {
+    margin-top: 400px;
+  }
 }
-
 
 #nav.active {
-    visibility: visible;
-    height: 132px;
+  visibility: visible;
+  height: 132px;
 }
-

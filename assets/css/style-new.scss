@@ -16,6 +16,9 @@ body {
   width: 100%;
   font-family: $font-family_1;
 }
+.intro {
+  overflow: hidden;
+}
 .grid {
   display: grid;
 }
@@ -28,7 +31,7 @@ b {
 }
 section {
   &:not(:first-of-type) {
-    display: block;
+
     margin-top: 6rem;
   }
 }
@@ -41,6 +44,7 @@ header {
   top: 0;
   width: 100vw;
   z-index: 900;
+  background-color: white;
 }
 
 .navbar {
@@ -76,7 +80,7 @@ header {
     gap: 30px;
     a {
       color: black;
-      font-weight: bold;
+      font-weight: 400;
       transition: 0.2s;
       padding: 5px;
       border-radius: 50px;
@@ -87,7 +91,7 @@ header {
       .menu {
         a {
           &:hover {
-            background-color: $background-color_1;
+            background-color: $color_1;
           }
         }
       }
@@ -114,7 +118,7 @@ header {
 }
 .container {
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 2%;
 }
 .apresentacao-imagem {
   display: block;
@@ -167,6 +171,7 @@ button {
   }
 }
 .animation-button {
+  transition: 0.5s;
   &:hover {
     transform: scale(1.08);
   }
@@ -275,6 +280,7 @@ section:first-of-type {
   float: right;
   cursor: pointer;
   background-color: $background-color_6;
+  border: none;
 }
 .card-icon {
   background: linear-gradient(
@@ -312,10 +318,9 @@ section:first-of-type {
   width: 100%;
 }
 .banner-marcas {
-  height: 30vw;
+  height: 40vh;
   position: relative;
   width: 100vw;
-  left: -5vw;
   background-color: $background-color_7;
 }
 .sobre-nos {
@@ -327,9 +332,8 @@ section:first-of-type {
 #sobrenos-intro {
   background-color: $background-color_8;
   width: 100vw;
-  position: relative;
-  left: -5vw;
   background-size: 100vw;
+  overflow: hidden;
   article {
     margin-left: 10px;
     padding-left: 30px;
@@ -340,10 +344,49 @@ section:first-of-type {
     button {
       width: 200px;
     }
-
-    h2 {
-      font-size: 3rem;
-    }
-
   }
+}
+
+#sobrenos-grid-info {
+  .titulo {
+    text-align: center;
+  }
+  .grid {
+    margin: 8rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+
+    .item {
+      &:not(:first-child) .item-container {
+        border-left: 3px solid rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+      }
+      .item-container {
+        padding: 1rem;
+        line-height: 4.2rem;
+        h3 {
+          line-height: initial;
+          margin-bottom: 2rem;
+        }
+      }
+      .grid-item-icon {
+        height: 20px;
+        width: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $background-color_2;
+      }
+      .grid-item-text {
+        line-height: 1.5rem;
+      }
+      button {
+        padding: 5px;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.banner-section {
+  display: flex;
 }
