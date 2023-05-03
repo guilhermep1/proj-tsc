@@ -47,6 +47,10 @@ header {
   background-color: white;
 }
 
+figure {
+  text-align: center;
+}
+
 .navbar {
   padding: 20px 5%;
   margin: 0 auto;
@@ -117,6 +121,7 @@ header {
   width: 50%;
 }
 .container {
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2%;
 }
@@ -362,6 +367,7 @@ section:first-of-type {
         border-radius: 2px;
       }
       .item-container {
+        height: 100%;
         padding: 1rem;
         line-height: 4.2rem;
         h3 {
@@ -389,4 +395,24 @@ section:first-of-type {
 
 .banner-section {
   display: flex;
+}
+
+#marcas-intro {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-image: url(../img/fundo-intro-marcas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.marcas-grid {
+  grid-template-columns: repeat(4,1fr);
 }
