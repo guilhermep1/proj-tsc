@@ -41,7 +41,6 @@ const currentUrl = window.location.href;
 const navbarLinks = document.querySelectorAll('#nav a');
 
 for(const link of navbarLinks) {
-    console.log(link);
     if(link.href == currentUrl) {
         link.style.fontWeight = 'bold';
     }

@@ -1,8 +1,7 @@
-@media screen and (max-width: 1140px) {
-  /* .apresentacao .titulo {
-        font-size: 60px;
-        line-height: 60px;
-    } */
+@media screen and (max-width: 1110px) {
+  .marcas-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -47,6 +46,15 @@
   /* .bg-circle {
         display: none;
     } */
+}
+
+@media screen and (max-width: 818px) {
+  .marcas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #marcas-intro {
+    background-position: center;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -145,6 +153,12 @@
   .modal iframe {
     width: 416px;
     height: 234px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .marcas-grid {
+    grid-template-columns: minmax(250px, 300px);
   }
 }
 
