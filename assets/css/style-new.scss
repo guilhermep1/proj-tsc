@@ -37,6 +37,9 @@ section {
 main {
   overflow: hidden;
 }
+.hidden {
+  visibility: hidden;
+}
 header {
   height: 90px;
   position: fixed;
@@ -87,6 +90,8 @@ figure {
       transition: 0.2s;
       padding: 5px;
       border-radius: 50px;
+      display: block;
+      width: 100%;
     }
   }
   #nav {
@@ -140,6 +145,10 @@ figure {
 }
 .texto {
   margin: 25px auto;
+  text-align: justify;
+}
+.paragrafo {
+  text-indent: 2rem;
 }
 #texto-apresentacao {
   padding-left: 0;
@@ -200,7 +209,7 @@ button {
 }
 
 section:first-of-type {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .botao-fechar {
@@ -216,6 +225,8 @@ section:first-of-type {
   position: absolute;
   background-color: $background-color_4;
   border-radius: 50%;
+  display: block;
+  width: 100%;
   -webkit-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.69);
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.69);
@@ -394,6 +405,12 @@ section:first-of-type {
 
 .banner-section {
   display: flex;
+  figure {
+    padding-left: 2rem;
+  }
+  .apresentacao-imagem {
+    border-radius: 15px;
+  }
 }
 
 #marcas-intro {
@@ -406,28 +423,38 @@ section:first-of-type {
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 10px;
   }
 }
 
 .marcas-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(250px, 300px));
   column-gap: 2rem;
   row-gap: 2rem;
   justify-content: center;
+  margin-bottom: 2rem;
   .marca-card {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 4rem;
     align-items: top;
     padding: 1rem;
     border-radius: 30px;
+    min-height: 370px;
     * {
       margin: 0 auto;
+    }
+    figure {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 0;
     }
   }
   .marca-botao {
@@ -439,4 +466,31 @@ section:first-of-type {
     display: block;
     max-height: 6rem;
   }
+}
+
+#fale-conosco {
+  .titulo {
+    margin-top: 8rem;
+    color: #1cc1bc;
+  }
+  .contact-list {
+    margin: 2rem 0;
+  }
+  li {
+    font-size: 17px;
+    margin-bottom: 1rem;
+    a {
+      color: black;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem;
+  background-color: #1dc2bd;
 }

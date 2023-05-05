@@ -24,4 +24,15 @@ class TscHeader extends HTMLElement {
     }
 }
 
+class TscFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <footer>
+        <p>Rua José Bernardo Pinto<br>Vila Guilherme<br>CEP 02055-000</p>
+      </footer>
+        `;
+    }
+}
+
 customElements.define("tsc-header", TscHeader);
+customElements.define("tsc-footer", TscFooter);

@@ -42,7 +42,9 @@
     display: block;
     margin: 0 auto;
   }
-
+  .banner-section figure {
+    padding: 0;
+  }
   /* .bg-circle {
         display: none;
     } */
