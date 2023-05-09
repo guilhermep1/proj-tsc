@@ -65,7 +65,7 @@ figure {
   align-self: center;
 }
 .navbar .logo img {
-  width: 80px;
+  width: 97px;
 }
 .navbar nav {
   width: 70%;
@@ -393,13 +393,14 @@ section:first-of-type {
   margin-bottom: 2rem;
 }
 #sobrenos-grid-info .grid .item .grid-item-icon {
+  text-align: center;
   color: white;
   display: block;
-  height: 40px;
-  width: 20px;
-  padding: 10px 20px;
+  width: max-content;
   border-radius: 10px;
   background-color: #1cc3be;
+  font-size: 33px;
+  padding: 9px;
 }
 #sobrenos-grid-info .grid .item .grid-item-text {
   line-height: 1.5rem;
