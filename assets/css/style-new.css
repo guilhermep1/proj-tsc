@@ -25,6 +25,7 @@ section:not(:first-of-type) {
 }
 
 main {
+  min-height: 88.8vh;
   overflow: hidden;
 }
 
@@ -499,6 +500,9 @@ footer {
   font-weight: bold;
   padding: 0.4rem;
   background-color: #1dc2bd;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style-new.css.map */
