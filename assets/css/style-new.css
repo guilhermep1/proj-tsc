@@ -393,6 +393,7 @@ section:first-of-type {
   margin-bottom: 2rem;
 }
 #sobrenos-grid-info .grid .item .grid-item-icon {
+  margin: 0 auto;
   text-align: center;
   color: white;
   display: block;
