@@ -4,9 +4,9 @@
 // const closeModalButton = document.querySelector('.botao-fechar');
 // const modalContainer = document.querySelector('.modal-container');
 // const video = document.getElementById('popup-video');
-const mobileButton = document.getElementById('btn-mobile');
-const navigation = document.getElementById('nav');
-const mainContent = document.querySelector('main');
+const mobileButton = document.getElementById("btn-mobile");
+const navigation = document.getElementById("nav");
+const mainContent = document.querySelector("main");
 
 // Functions
 // function toggleModal() {
@@ -15,13 +15,13 @@ const mainContent = document.querySelector('main');
 // }
 
 function toggleNavigation() {
-    navigation.classList.toggle('active');
+  navigation.classList.toggle("active");
 }
 
 function closeNavigationIfActive() {
-    if (navigation.classList.contains('active')) {
-        toggleNavigation();
-    }
+  if (navigation.classList.contains("active")) {
+    toggleNavigation();
+  }
 }
 
 // function closeModalAndResetVideo() {
@@ -32,16 +32,16 @@ function closeNavigationIfActive() {
 // Event listeners
 // openModalButton.addEventListener('click', toggleModal);
 // closeModalButton.addEventListener('click', toggleModal);
-mobileButton.addEventListener('click', toggleNavigation);
-mainContent.addEventListener('click', closeNavigationIfActive);
+mobileButton.addEventListener("click", toggleNavigation);
+mainContent.addEventListener("click", closeNavigationIfActive);
 // modalContainer.addEventListener('click', closeModalAndResetVideo);
 
 //Current Page Script
 const currentUrl = window.location.href;
-const navbarLinks = document.querySelectorAll('#nav a');
+const navbarLinks = document.querySelectorAll("#nav a");
 
-for(const link of navbarLinks) {
-    if(link.href == currentUrl) {
-        link.style.fontWeight = 'bold';
-    }
+for (const link of navbarLinks) {
+  if (link.href == currentUrl) {
+    link.style.fontWeight = "bold";
+  }
 }

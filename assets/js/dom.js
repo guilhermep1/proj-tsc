@@ -29,7 +29,7 @@ class TscFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer>
-        <p>Rua José Bernardo Pinto<br>Vila Guilherme<br>CEP 02055-000</p>
+        <p>Rua José Bernardo Pinto, 285<br>Vila Guilherme<br>CEP 02055-000</p>
       </footer>
         `;
     }
